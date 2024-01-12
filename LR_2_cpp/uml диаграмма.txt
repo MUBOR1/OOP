@@ -1,0 +1,54 @@
++-------------------------------------+
+|             <<include>>             |
+|            <iostream>               |
+|             <cmath>                 |
++-------------------------------------+
+|               форма                 |
+|-------------------------------------|
+| - x: double                         |
+| - y: double                         |
+|-------------------------------------|
+| + Shape(x: double = 0, y: double =  |
+|   0)                                |
+| + move(dx: double, dy: double)      |
+| + resize(factor: double)            |
+| + rotate(angle: double)             |
+| + printInfo() const                 |
++-------------------------------------+
+|              круг                   |
+|-------------------------------------|
+| - radius: double                    |
+|-------------------------------------|
+| + Circle(x: double = 0, y: double = |
+|   0, radius: double = 0)            |
+| + resize(factor: double) override   |
+| + rotate(angle: double) override    |
+| + printInfo() const override        |
++-------------------------------------+
+|              кватрат                |
+|-------------------------------------|
+| - sideLength: double                |
+|-------------------------------------|
+| + Square(x: double = 0, y: double = |
+|   0, sideLength: double = 0)        |
+| + resize(factor: double) override   |
+| + rotate(angle: double) override    |
+| + printInfo() const override        |
++-------------------------------------+
+|            прямоугольник            |
+|-------------------------------------|
+| - width: double                     |
+| - height: double                    |
+| + Rectangle(x: double = 0, y:       |
+|   double = 0, width: double = 0,    |
+|   height: double = 0)               |
+| + resize(factor: double) override   |
+| + rotate(angle: double) override    |
+| + printInfo() const override        |
++-------------------------------------+
+|               main                  |
+|-------------------------------------|
+| #include <iostream>                 |
+| #include <cmath>                    |
+| + main(): int                       |
++-------------------------------------+
