@@ -1,0 +1,61 @@
++-------------------+
+|     main.py       |
++-------------------+
+|    - main()      |
++-------------------+
+
+           |
+           | uses
+           |
+           V
+
++-------------------+                +------------------+
+|   deposit.py      |                |       Python     |
++-------------------+                +------------------+
+|Class:             |                |   Class:         |
+|                   |                |                  |
+| - TimeDeposit     |                |                  |
+| - BonusTimeDeposit|<---------------| dictionary       |
+| - CompoundTimeDepo|                |                  |
++-------------------+                +------------------+
+|  Methods:         |                |    Methods:      |
+|                   |                |                  |
+| - check_self()    |                |                  |
+| - get_profit()    |                |                  |
+| - get_sum()       |                |                  |
++-------------------+                +------------------+
+  ^          ^                       ^          ^
+ /            \                      |          |
+| overrides   |extends               |          |
+|            /                        |          |
+|           |                         |          |
+|override |                           |          |
+|       /                              |          |
+|      /                               |          |
+|     |                                V         |
++---------------------+                +---------------------+
+| TimeDeposit         |                |   BonusTimeDeposit  |
++---------------------+                +---------------------+
+|  Attributes:        |                |   Attributes:       |
+|- name               |                |- _bonus             |
+|- _interest_rate     |                +---------------------+
+|- _period_limit      |                |  Inherited methods: |
+|- _sum_limit         |                |- check_self()       |
+|                     |                |- get_profit()       |
+|                     |                |- get_sum()          |
++---------------------+                +---------------------+
+  ^          ^                            ^         ^
+ /            \                           |         |
+| inherits from |inherits from            |         |
+|              /                           |         |
+|             /                            |         |
+|       +-------------------+              V         |
+|       | TimeDeposit       |        +---------------------+
+|       +-------------------+        | CompoundTimeDepos  |
+|       |  Inherited methods: |        +---------------------+
+|       |- check_self()      |        |  Inherited methods: |
+|       |- get_profit()      |        |- check_self()       |
+|       |- get_sum()         |        |- get_profit()       |
++------------------------------------>|                     |
+                                        |                     |
+                                        +---------------------+

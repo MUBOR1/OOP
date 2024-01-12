@@ -1,0 +1,18 @@
+--------------------------------
+|            Date              |
+--------------------------------
+| - year: int                   |
+| - month: int                  |
+| - day: int                    |
+--------------------------------
+| + __init__(year, month, day)  |
+| + __str__(): string           |
+| + __add__(other): Date        |
+| + __sub__(other): Date        |
+| + from_string(str_value): Date|
+| + save(filename): void        |
+| + load(filename): Date        |
+| + is_valid(): bool            |
+| + is_weekend: bool            |
+| + days_until(other_date): int |
+--------------------------------
