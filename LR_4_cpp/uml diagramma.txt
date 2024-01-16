@@ -1,0 +1,55 @@
+ _____________________________________
+|               <<include>>           |
+|       Utils -------------------|    |
+|             -                    | 1  |
+|             - printError()       |___|
+|                                    |
+|____________________________________|
+         |                    ^ 
+         |                    |
+         |                    |1
+         |                    |
+ ________v____________________|________
+|                                      |
+|                 Student              |
+|             - fio: string            |
+|             - courseNumber: int      |
+|             - middleGrade: double    |
+|             - grade: int[5]          |
+|             _________________________|1
+|             +Student()               |
+|             +Student(string, int)    |
+|             +setGrades(int*)         |
+|             +showGrades()            |
+|             +isGoodStudent()         |
+|             +getGrade(): const int * |
+|             +getMiddleGrade(): double|
+|             +getFio(): const string& |
+|             +setFio(const string&)   |
+|             +getCourseNumber(): int  |
+|             +setCourseNumber(int)    |
+|             -Student::~Student()     |
+|             +operator>> : istream&   |
+|             +operator<< : ostream&   |
+|             _________________________|
+|______________________________________|
+         |                    ^
+         |                    |
+         |                    |1
+         |                    |
+ ________v____________________|________
+|                                      |
+|             StudentList              |
+|             - data: Student**        |
+|             - size: int              |
+|             _________________________|
+|             +StudentList()           |
+|             +getData(): Student**    |
+|             +getSize(): int          |
+|             +add(Student&): StudentList&
+|             +print()                 |
+|             +remove(int): StudentList&
+|             +findGoodStudents(): StudentList*
+|             +showGoodStudents()      |
+|             -StudentList::~StudentList()|
+|______________________________________|
